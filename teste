@@ -1,0 +1,4 @@
+import pyPdf
+pdf = pyPdf.PdfFileReader(open(filename, "rb"))
+for page in pdf.pages:
+    print page.extractText()
